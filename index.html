@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<link rel="icon" href="images/linkedin2.jpg">
+	<title>Aditya Verma</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt" style="box-shadow: 0 0 2em 0 rgba(0,0,0,0.8); background: rgba(42,47,74,0.6)">
+			<!--(0, 100, 100, 0.8)"-->
+			<a href="https://www.linkedin.com/in/aditya-verma-b09493135/" class="logo" style="position: absolute">
+				<strong>Aditya</strong>
+
+				Verma
+			</a>
+			<span class="inner" style="padding: 0; margin-left: 30vh">
+				<ul class="icons">
+
+					<li>
+						<a href="https://github.com/adverma98" class="icon alt fa-github">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/aditya-verma-b09493135/" class="icon alt fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+				</ul>
+				<!--<ul class="copyright">
+									<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								</ul>-->
+			</span>
+
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li>
+					<a href="index.html">About Me</a>
+				</li>
+				<li>
+					<a href="landing.html">Projects</a>
+				</li>
+				<li>
+					<a href="comingsoon.html">Work and Research</a>
+				</li>
+				<li>
+					<a href="generic.html">Academics</a>
+				</li>
+				<li>
+					<a href="comingsoon.html">Extra-Curriculars</a>
+				</li>
+			</ul>
+			<ul class="actions stacked">
+				<li>
+					<a href="https://github.com/adverma98" class="button primary fit">GitHub</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/aditya-verma-b09493135/" class="button fit">LinkedIn</a>
+				</li>
+				<li>
+					<a href="https://devpost.com/adverma98?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" class="button primary fit">DevPost</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<section id="banner" class="major">
+			<div class="inner">
+				<header class="major">
+					<script>var TxtRotate = function (el, toRotate, period) {
+							this.toRotate = toRotate;
+							this.el = el;
+							this.loopNum = 0;
+							this.period = parseInt(period, 10) || 2000;
+							this.txt = '';
+							this.tick();
+							this.isDeleting = false;
+						};
+
+						TxtRotate.prototype.tick = function () {
+							var i = this.loopNum % this.toRotate.length;
+							var fullTxt = this.toRotate[i];
+
+							if (this.isDeleting) {
+								this.txt = fullTxt.substring(0, this.txt.length - 1);
+							} else {
+								this.txt = fullTxt.substring(0, this.txt.length + 1);
+							}
+
+							this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+							var that = this;
+							var delta = 200 - Math.random() * 100;
+
+							if (this.isDeleting) { delta /= 2; }
+
+							if (!this.isDeleting && this.txt === fullTxt) {
+								delta = this.period;
+								this.isDeleting = true;
+							} else if (this.isDeleting && this.txt === '') {
+								this.isDeleting = false;
+								this.loopNum++;
+								delta = 500;
+							}
+
+							setTimeout(function () {
+								that.tick();
+							}, delta);
+						};
+
+						window.onload = function () {
+							var elements = document.getElementsByClassName('txt-rotate');
+							for (var i = 0; i < elements.length; i++) {
+								var toRotate = elements[i].getAttribute('data-rotate');
+								var period = elements[i].getAttribute('data-period');
+								if (toRotate) {
+									new TxtRotate(elements[i], JSON.parse(toRotate), period);
+								}
+							}
+							// INJECT CSS
+							var css = document.createElement("style");
+							css.type = "text/css";
+							css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+							document.body.appendChild(css);
+						};
+
+					</script>
+
+
+					<span class="image">
+						<img src="images/linkedin2.jpg" alt="" />
+					</span>
+					<h1>
+						<span class="txt-rotate" data-period="2000" data-rotate='[ "Hi", "नमस्ते", "Hola", "ہیلو","Bonjour", "你好", "Hallo", "שלום", "Ciao", "こんにちは", "Здравствуйте" ]'></span>, my name is Aditya</h1>
+				</header>
+				<div class="content">
+					<p style="font-size: 15px">Welcome to my portfolio! You can learn all about me here.</p>
+					<ul class="actions">
+						<li>
+							<a href="#one" class="button next scrolly">Find out more</a>
+						</li>
+					</ul>
+				</div>
+				<section id="two">
+					<!--style="background-color:darkslategray;">-->
+					<div class="inner" style="margin-top:80px">
+						<header class="major">
+							<h2>Me in a Nutshell</h2>
+						</header>
+						<p>Hello person who found my page! Lovely to have you. So, you want to know who I am and what I'm about, huh? Awesome!
+							Well, I'm a student of Computer Engineering and Computer Science in the Honors Academy at Rutgers University, New
+							Brunswick. I'm also a huge physics nerd and will talk about it all day (and night) long!
+							<br> Outside of my more left-brained interests, I enjoy a variety of things. I'm involved in all sorts of clubs on campus
+							and try to join a new one every semester. To keep fit, I run cross-country, play soccer and love to Zumba! I also
+							indulge in video games with my roomates from time to time. I love a good book as much as the next YouTube video or
+							Twitch stream!</p>
+
+					</div>
+				</section>
+			</div>
+		</section>
+
+
+		<!-- Main -->
+		<div id="main">
+			<!-- One -->
+			<section id="one" class="tiles">
+				<article>
+					<span class="image">
+						<img src="images/robo.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3>
+							<a href="landing.html" class="link">Projects</a>
+						</h3>
+						<p>Tinkerings of a restless mind</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/rsrch.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3>
+							<a href="comingsoon.html" class="link">Work and Research</a>
+						</h3>
+						<p>Exploring the Frontiers of Science and Industry</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/me.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3>
+							<a href="generic.html" class="link">Academics</a>
+						</h3>
+						<p>We DO Need Some Education!</p>
+					</header>
+				</article>
+				<article>
+					<span class="image">
+						<img src="images/hc2.jpg" alt="" />
+					</span>
+					<header class="major">
+						<h3>
+							<a href="comingsoon.html" class="link">Extra-Curriculars</a>
+						</h3>
+						<p>Mens Sana in Corpore Sano</p>
+					</header>
+				</article>
+				<!--<article>
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="landing.html" class="link">Resume</a></h3>
+										<p></p>
+									</header>
+								</article>-->
+			</section>
+
+			<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<header class="major">
+						<h2>Resume</h2>
+					</header>
+					<p>My resume is still very much a work in progress. Do let me know if you see any room for improvement. I'm always open
+						to some constructive criticism :)</p>
+					<ul class="actions">
+						<li>
+							<a href="resumev5.pdf" download="AdityaVerma_Resume" class="button">Download PDF</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="inner" id="ten">
+				<!--
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+						-->
+				<section class="split">
+					<section>
+						<div class="contact-method">
+							<span class="icon alt fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="av558@scarletmail.rutgers.edu">av558@scarletmail.rutgers.edu</a>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon alt fa-phone"></span>
+							<h3>Phone</h3>
+							<span>(848)-252-9755</span>
+						</div>
+					</section>
+					<section>
+						<div class="contact-method">
+							<span class="icon alt fa-home"></span>
+							<h3>Address</h3>
+							<span>Aditya Verma
+								<br /> 7700 BPO Way, Piscataway
+								<br /> New Jersey - 08854
+								<br /> United States of America</span>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h3>Links:</h3>
+				<ul class="icons">
+					<!-- <li>
+						<a href="#" class="icon alt fa-twitter">
+							<span class="label">Twitter</span>
+						</a>
+					</li> -->
+					<!-- <li>
+						<a href="#" class="icon alt fa-facebook">
+							<span class="label">Facebook</span>
+						</a>
+					</li> -->
+					<!--<li>
+						<a href="#" class="icon alt fa-instagram">
+							<span class="label">Instagram</span>
+						</a>
+					</li>-->
+					<li>
+						<a href="https://github.com/adverma98" class="icon alt fa-github">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/aditya-verma-b09493135/" class="icon alt fa-linkedin">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+				</ul>
+				<!--<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>-->
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
